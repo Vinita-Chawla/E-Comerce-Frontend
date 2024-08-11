@@ -79,7 +79,7 @@ const Navbar = (props) => {
           }
     })
 
-    let response = await axios.post("https://e-comerce-backend-git-main-vanita-chawlas-projects.vercel.app/", line_items);
+    let response = await axios.post("https://e-comerce-backend-eight.vercel.app/", line_items);
     console.log(response);
 
     stripe.redirectToCheckout({sessionId:response.data.session.id})

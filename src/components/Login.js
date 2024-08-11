@@ -21,7 +21,7 @@ function Login() {
     formdata.append("email",email)
     formdata.append("password",password);
    
-    let response = await axios.post("https://e-comerce-backend-git-main-vanita-chawlas-projects.vercel.app/auth/login", formdata);
+    let response = await axios.post("hhttps://e-comerce-backend-eight.vercel.app/auth/login", formdata);
     console.log(response)
    
     if(response.data.result){
