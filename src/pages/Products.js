@@ -4,7 +4,6 @@ import { fetchItems } from "../store/slices/itemSlice";
 import { useSelector } from "react-redux";
 import { addToCart } from "../store/slices/cartSlice";
 import { useNavigate } from "react-router-dom";
-import { toast } from 'react-toastify'
 
 function Products(props) {
   const dispatch = useDispatch();

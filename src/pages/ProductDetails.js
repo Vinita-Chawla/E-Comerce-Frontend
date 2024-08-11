@@ -27,7 +27,7 @@ function ProductDetails() {
     <>
     <div className='mt-[8rem] grid grid-cols-1 md:grid-cols-2'>
     <div className='flex items-center justify-center'>
-      <img src={clickedItem?.image} className='w-[50%]' alt='image'/>
+      <img src={clickedItem?.image} className='w-[50%]' alt=''/>
     </div>
     <div className='p-[1rem] flex flex-col items-start gap-[1rem]'>
       <h1 className='text-[2rem]'>{clickedItem?.title}</h1>

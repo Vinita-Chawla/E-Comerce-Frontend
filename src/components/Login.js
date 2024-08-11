@@ -14,14 +14,14 @@ function Login() {
     if(auth){
       navigate("/")
     }
-  },[])
+  },[navigate])
 
   const handleData = async()=>{
     let formdata = new FormData();
     formdata.append("email",email)
     formdata.append("password",password);
    
-    let response = await axios.post("http://localhost:5000/auth/login", formdata);
+    let response = await axios.post("https://e-comerce-backend-git-main-vanita-chawlas-projects.vercel.app/auth/login", formdata);
     console.log(response)
    
     if(response.data.result){

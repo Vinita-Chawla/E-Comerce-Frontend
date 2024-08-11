@@ -16,7 +16,7 @@ function Signup() {
     if(auth){
       navigate("/")
     }
-  },[])
+  },[navigate])
 
   const handleData = async()=>{
     let formdata = new FormData();
@@ -25,7 +25,7 @@ function Signup() {
     formdata.append("password",password);
     formdata.append("profile",profile);
    
-    let response = await axios.post("http://localhost:5000/auth/register", formdata);
+    let response = await axios.post("https://e-comerce-backend-git-main-vanita-chawlas-projects.vercel.app/auth/register", formdata);
     console.log(response);
 
     if(response.data.user){

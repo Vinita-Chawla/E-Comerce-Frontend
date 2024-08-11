@@ -39,7 +39,7 @@ const About = () => {
       <p>Praesent vel faucibus ligula. Sed sit amet ipsum eget velit aliquet faucibus. Maecenas et odio id turpis sollicitudin pulvinar sit amet vitae augue. Phasellus nec ultricies arcu. Quisque efficitur tellus sit amet bibendum molestie. Duis id egestas odio. Phasellus lacinia ex quis faucibus tempor. Sed feugia.</p>
     </div>
     <div className='productImg'>
-      <img src="./img/started.png" alt='image'/>
+      <img src="./img/started.png" alt=''/>
     </div>
     </div>
     </section>

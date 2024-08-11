@@ -6,12 +6,12 @@ const NewCollection = () => {
       <section className="marginTop" id="baseCollection">
         <div className="baseCollection">
           <div className="baseLeft">
-            <img src="./img/cat1.jpg" />
+            <img src="./img/cat1.jpg" alt="" />
             <h1>The base collection - Ideal every day.</h1>
             <button className='px-[1.5rem] py-[0.6rem] text-[1.1rem] font-semibold bg-[#ff5252] rounded mt-[1rem] w-[9rem] text-white'>Shop Now</button>
           </div>
           <div className="baseRight">
-            <img src="./img/cat2.jpg" />
+            <img src="./img/cat2.jpg" alt="" />
           </div>
         </div>
       </section>
