@@ -1,0 +1,538 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+*{
+   margin:0;
+   padding: 0;
+   box-sizing: border-box;
+   list-style:none;
+   text-decoration: none;
+   scroll-padding-top: 2rem;
+   scroll-behavior: smooth;
+   font-family: 'Poppins', sans-serif;
+}
+p,h1,h2{
+  margin: 0;
+  padding: 0;
+}
+html {
+  box-sizing: border-box;
+  font-size: 80%;
+}
+
+.homebg{
+  background: url("./images/body-bkg.jpg");
+  background-position: center;
+  background-size: cover;
+  object-fit: cover;
+  margin:0 4rem;
+  margin-top: 5rem !important;
+ }
+
+ .cart_popup{
+  width: 30rem;
+  height: 100vh;
+  background: #FFF;
+  position: fixed;
+  right: -100%;
+  transition: 0.8s;
+  color: black;
+  top:9%;
+  padding-top:1rem
+}
+.active{
+ right: 0;
+}
+
+@media(max-width:480px){
+  .cart_popup{
+    width:100%
+  }
+  
+.homebg{
+ 
+  margin:0 0rem;
+  margin-top: 5rem !important;
+ }
+}
+
+
+/* Commom classes css starts */
+
+.mainHeading{
+  font-size: 1.8rem;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+}
+.marginTop{
+  margin-top: 9rem !important;
+}
+
+
+/* Commom classes css ends */
+
+
+/* center logo css */
+.centerLogo{
+  display: flex;
+  /* align-items: center; */
+  justify-content: center;
+  flex-direction: column;
+}
+.store{
+  font-size: 0.8rem;
+  letter-spacing: 2rem;
+  /* margin-left: 2rem; */
+}
+.logo{
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+@media (max-width:400px){
+
+.logo{
+  font-size: 1.5rem;
+}
+}
+
+/* search css */
+.search-form {
+  position: absolute;
+  top: 110%;
+  right: -110%;
+  width: 40rem;
+  height: 3rem;
+  background: #fff;
+  border-radius: .5rem;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+  transition: 0.5s ease-in-out;
+}
+
+
+@media(max-width: 700px){
+  .search-form {
+    width: 20rem;
+  }
+}
+@media(max-width: 400px){
+  .search-form {
+    width: 15rem;
+  }
+}
+.search-form.active {
+  right: 0rem;
+  transition: 0.5s ease-in-out;
+}
+
+.search-form input {
+  height: 100%;
+  width: 100%;
+  background: none;
+  text-transform: none;
+  font-size: 1.1rem;
+  padding: 0 1rem;
+  border: none;
+}
+
+.search-form label {
+  font-size: 1.2rem;
+  padding-right: 1.5rem;
+  color: #FF5252;
+  cursor: pointer;
+}
+
+.search-form label:hover {
+  transform: scale(0.9);
+}
+#search-box:focus{
+  border:none;
+  outline: none;
+}
+
+
+
+/* New collection section css starts */
+.newCollection{
+  position: relative;
+  max-width: 95%;
+    margin: auto;
+}
+.collection_overlay{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width:100%;
+  height:100%;
+  background-color: #000000;
+  opacity: .5;
+}
+
+.newcollection_content{
+  background: url("../public/img/background1.jpeg");
+  height:90vh;
+  background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0rem;
+}
+
+.newcollection_content .white{
+  color: white;
+  z-index: 1;
+  text-align: center;
+}
+.newcollection_content h1{
+  font-size: 1.6rem;
+  margin-bottom: 0.5rem;
+}
+.newcollection_content h2{
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+}
+.newcollection_content p{
+  font-size: 1.1rem;
+}
+.baseCollection{
+  display: flex;
+  justify-content: center;
+  gap:1rem;
+}
+#baseCollection{
+  max-width: 95%;
+  margin: auto;
+}
+.baseLeft{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.baseLeft h1{
+  font-size: 1.8rem;
+  text-align: center;
+  margin: 1.5rem 0;
+  margin-top: 3rem !important;
+} 
+@media(max-width:600px){
+  .baseCollection{
+    flex-wrap: wrap;
+  }
+}
+/* New collection section css starts */
+
+
+/* Reviews css starts */
+#reviews{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.reviews{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap:1rem;
+  margin-top: 3rem !important;
+}
+.review img{
+  width:95%
+}
+.review{
+  display: flex;
+  justify-content: center;
+  position: relative
+}
+.reviewName{
+  background: white;
+  height:5rem;
+  position: absolute;
+  bottom:3%;
+  width:90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.reviewName h1{
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+.reviewtitle p{
+  width:60%;
+  margin: auto;
+  text-align: center;
+}
+.reviewtitle a{
+  font-size: 1rem;
+}
+@media(max-width:700px){
+  .reviewtitle p{
+    width:90%;
+  }
+  .reviews{
+flex-wrap: wrap;
+  }
+}
+/* Reviews css ends */
+
+
+/* Contact css start */
+.contact {
+  color:black;
+  margin-bottom: 3rem !important;
+}
+
+.contact .row {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.footerHeader{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+.contact .row .col h2 {
+  font-size: 1.8rem;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+}
+
+.contact .row .col p {
+  margin-bottom: 2rem;
+  font-size: 1rem;
+  text-align: center;
+}
+
+
+.contact form div {
+  position: relative;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.contact form #emailInput {
+  font-family: 'Roboto', sans-serif;
+  text-indent: 2rem;
+  width: 100%;
+  border-radius: 1rem;
+  padding: 1.5rem 0;
+  outline: none;
+  border: none;
+  background: #FF5252;
+  color: #ffffff;
+  /* opacity: 0.8; */
+}
+.contact form #emailInput::placeholder{
+  color: white;
+  /* opacity: 0.8; */
+}
+
+.contact form #sendInput {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color:white;
+  margin: 0.5rem;
+  padding: 1rem 3rem;
+  border-radius: 1rem;
+  font-size: 1.2rem;
+  border:none;
+  color: #FF5252;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+
+
+
+
+@media only screen and (max-width: 768px) {
+
+  .contact form div {
+    width: 100%;
+  }
+}
+
+
+
+/* Contact css ends */
+/* Footer css starts */
+.footer {
+  padding: 7rem 1rem;
+  background-color: #FF5252;
+  color: white;
+}
+
+footer .row {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  max-width: 99.6rem;
+  margin: 0 auto;
+}
+
+.footer .col {
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.footer .col:last-child {
+  flex-direction: row;
+  justify-content: center;
+}
+
+.footer .col:last-child span {
+  font-size: 2.5rem;
+  margin-right: 0.5rem;
+}
+
+.footer .col a {
+  color: var(--white);
+  font-size: 1.1rem;
+  padding: 0.5rem;
+  font-weight: 300;
+}
+
+.footer .col h4 {
+  margin-bottom: 1rem;
+  font-size: 2rem;
+}
+
+@media only screen and (max-width: 567px) {
+  footer .row {
+    grid-template-columns: 1fr;
+    row-gap: 3rem;
+  }
+}
+
+/* Footer css ends */
+
+
+/* About section css starts */
+.about{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+}
+.about h1{
+  position: relative;
+  font-size: 2.5rem !important;
+}
+.about h1::after{
+  content: "";
+  width:40px;
+  height: 0.3rem;
+  background-color: black;
+  position: absolute;
+  bottom: -25%;
+}
+.about_below{
+  width:50%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+.about_below h5{
+  font-size: 1.2rem;
+}
+.about_below p{
+  font-size: 1rem;
+  line-height: 2rem;
+}
+.overlay2{
+  opacity: .5;
+}
+.background{
+  background: url("../public/img/background2.jpg") !important;
+  background-position: center center !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    background-attachment: fixed !important;
+}
+.bgColor{
+  background-color: #faedeb;
+  margin-top: 5rem !important;
+}
+.detailpadding{
+  padding: 3rem;
+}
+.detailContainer{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.productDetail{
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+.productImg{
+  display: flex;
+  justify-content: center;
+}
+@media(max-width:780px){
+  .detailContainer {
+   flex-wrap: wrap;
+}
+.about_below{
+  width: 90%;
+}
+.productImg img{
+  width: 80%;
+}
+}
+/* About section css ends */
+
+
+/* Success css starts */
+.sc-container{
+  width:100%;
+  height:100vh;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.sc-container img{
+  width:200px;
+  margin:2rem 0;
+}
+.sc-container h1{
+  font-size: 2.8rem;
+  margin-bottom:10px;
+}
+.sc-container p{
+  max-width:600px;
+  font-size: 0.97rem;
+  text-align: center;
+  margin: 0.5rem 0;
+}
+.sc-btn{
+  padding:12px 20px;
+  border-radius: 2rem;
+  background-color: #02ac70;
+  color:#ffffff;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+/* Success css ends */
+
+
+
+
