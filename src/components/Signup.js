@@ -16,7 +16,7 @@ function Signup() {
     if(auth){
       navigate("/")
     }
-  },[navigate])
+  },[])
 
   const handleData = async()=>{
     let formdata = new FormData();
